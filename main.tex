@@ -1,0 +1,39 @@
+\documentclass[10pt,oneside,a4paper]{article}
+\input{setup/preamble}
+\input{setup/macros}
+
+\addbibresource{main.bib}
+
+\title{Title}
+\singlespacing
+
+\author{
+  Last, First\\
+  \texttt{mail}
+  \and
+  Last, First\\
+  \texttt{mail}
+  \and
+  Last, First\\
+  \texttt{mail}
+  \and
+  Last, First\\
+  \texttt{mail}
+}
+
+
+\begin{document}
+\vspace*{-35pt}
+    {\let\newpage\relax\maketitle}
+
+\begin{multicols}{2}
+\input{sec/abstract}
+\input{sec/Introduction}
+\input{sec/Preliminaries}
+\end{multicols}
+
+\newpage
+\printbibliography[heading=bibintoc, title=Bibliography]
+\label{bib:references}
+
+\end{document}
