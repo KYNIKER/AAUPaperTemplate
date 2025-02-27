@@ -1,0 +1,78 @@
+\usepackage[utf8]{inputenc}
+\usepackage[main=english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[backend=biber,
+  bibencoding=utf8,
+  style=ieee,
+  maxcitenames=1,
+  mincitenames=1
+]{biblatex}
+\appto\bibfont{\setlength{\emergencystretch}{.5em}}
+\usepackage[babel,threshold=2]{csquotes}
+
+
+%%%%% ams %%%%%
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+%%%%% Geometry (margins) %%%%%%
+
+\usepackage[
+  top=25mm,
+  bottom=25mm,
+  left=20mm,
+  right=20mm,
+  footskip=18mm
+]{geometry}
+
+
+%%%%% Urls %%%%%%
+\PassOptionsToPackage{hyphens}{url} %fix linebreaks
+\usepackage{hyperref}
+\usepackage{url}
+
+
+%%%%% Figures %%%%%
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{graphicx}
+\usepackage[dvipsnames,table,xcdraw]{xcolor}
+
+
+%%%%% Redefining sectioning styles %%%%%
+\usepackage{titlesec}
+\titleformat{\section}[block]
+{\normalfont\bfseries\Large}{\thesection}{1ex}{}
+\titleformat{\subsection}[block]
+{\normalfont\bfseries\large}{\thesubsection}{1ex}{}
+\titleformat{\subsubsection}[block]
+{\normalfont\bfseries\normalsize}{\thesubsubsection}{1ex}{}
+
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{6pt}{2pt}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+%%%%% Redefining autoref category names %%%%%
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Section}
+\renewcommand{\subsubsectionautorefname}{Section}
+
+\renewcommand{\figureautorefname}{Fig.}
+\renewcommand{\tableautorefname}{Tab.}
+\renewcommand{\equationautorefname}{Eq.}
+
+
+
+%%%%% misc %%%%%
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+%\usepackage{placeins}
